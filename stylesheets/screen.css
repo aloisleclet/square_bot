@@ -1,0 +1,308 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@keyframes first_feet_walk_right {
+  from {
+    left: 1.6px;
+  }
+  to {
+    left: 13.2px;
+  }
+}
+@keyframes second_feet_walk_right {
+  from {
+    left: 13.2px;
+  }
+  to {
+    left: 1.6px;
+  }
+}
+@keyframes first_feet_walk_left {
+  from {
+    left: 13.2px;
+  }
+  to {
+    left: 1.6px;
+  }
+}
+@keyframes second_feet_walk_left {
+  from {
+    left: 1.6px;
+  }
+  to {
+    left: 13.2px;
+  }
+}
+@keyframes walk {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 10px;
+  }
+}
+@keyframes stand_body {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 1px;
+  }
+}
+@keyframes squat_down {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 8px;
+  }
+}
+@keyframes squat {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes land {
+  0% {
+    top: 0px;
+  }
+  60% {
+    top: 6px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* line 81, ../sass/screen.scss */
+body .map {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  border-bottom: 3px solid black;
+}
+/* line 91, ../sass/screen.scss */
+body .character {
+  width: 20px;
+  height: 27px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+/* line 100, ../sass/screen.scss */
+body .character .body {
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
+/* line 111, ../sass/screen.scss */
+body .character .body .eyes {
+  width: 100%;
+  height: 7.2px;
+  position: absolute;
+  top: 6.4px;
+  left: 0px;
+  z-index: 2;
+}
+/* line 119, ../sass/screen.scss */
+body .character .body .eyes .eye {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  transition: all ease 2s;
+}
+/* line 125, ../sass/screen.scss */
+body .character .body .eyes .eye:first-child {
+  left: 4px;
+  width: 3.6px;
+  height: 5px;
+}
+/* line 132, ../sass/screen.scss */
+body .character .body .eyes .eye:last-child {
+  left: 11px;
+  width: 6px;
+  height: 100%;
+}
+/* line 144, ../sass/screen.scss */
+body .character .foot {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 21px;
+}
+/* line 152, ../sass/screen.scss */
+body .character .foot .feet {
+  width: 3.6px;
+  height: 6.4px;
+  position: absolute;
+  top: 0px;
+  background-color: black;
+}
+/* line 160, ../sass/screen.scss */
+body .character .foot .feet:first-child {
+  left: 1.6px;
+}
+/* line 165, ../sass/screen.scss */
+body .character .foot .feet:last-child {
+  left: 13.2px;
+}
+/* line 177, ../sass/screen.scss */
+body .character.walk.right .feet:first-child {
+  animation-name: first_feet_walk_right;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 184, ../sass/screen.scss */
+body .character.walk.right .feet:last-child {
+  animation-name: second_feet_walk_right;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 194, ../sass/screen.scss */
+body .character.walk.left .feet:first-child {
+  animation-name: first_feet_walk_left !important;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 201, ../sass/screen.scss */
+body .character.walk.left .feet:last-child {
+  animation-name: second_feet_walk_left !important;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 216, ../sass/screen.scss */
+body .character.left .eye:first-child {
+  left: 4px;
+  width: 6px !important;
+  height: 100% !important;
+}
+/* line 223, ../sass/screen.scss */
+body .character.left .eye:last-child {
+  left: 13px !important;
+  width: 3.6px !important;
+  height: 5px !important;
+}
+/* line 233, ../sass/screen.scss */
+body .character.left .feet:first-child {
+  left: 13.2px !important;
+}
+/* line 238, ../sass/screen.scss */
+body .character.left .feet:last-child {
+  left: 16px !important;
+}
+/* line 248, ../sass/screen.scss */
+body .character.stand .body {
+  animation-name: stand_body !important;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 255, ../sass/screen.scss */
+body .character.stand .eye {
+  width: 6px !important;
+  height: 100% !important;
+}
+/* line 266, ../sass/screen.scss */
+body .character.squat_down .body {
+  animation-name: squat_down !important;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+/* line 278, ../sass/screen.scss */
+body .character.land .body {
+  animation-name: land !important;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+}
+/* line 290, ../sass/screen.scss */
+body .character.squat .body {
+  animation-name: squat !important;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* line 302, ../sass/screen.scss */
+body .character.sleep .body {
+  animation-name: squat_down !important;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  top: 8px !important;
+}
+/* line 311, ../sass/screen.scss */
+body .character.sleep .eye {
+  height: 1px !important;
+}
