@@ -1,0 +1,23 @@
+{
+  "name": "square_bot",
+  "version": "1.0.0",
+  "description": "A minimalist autonomous character, which execute random actions like squatting, sleeping, walking, jumping ...",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloisleclet/square_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloisleclet/square_bot/issues"
+  },
+  "homepage": "https://github.com/aloisleclet/square_bot#readme",
+  "dependencies": {
+    "vite": "^6.0.5"
+  }
+}
